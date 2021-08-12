@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="water" class="com.mul.avatar.Water" />
+        
+        <bean id="air" class="com.mul.avatar.Air" />
+        
+        <bean id="fire" class="com.mul.avatar.Fire" />
+        
+        <bean id="earth" class="com.mul.avatar.Earth" />
+
+        <bean id="aang" class="com.mul.avatar.Aang">
+                <property name="element" ref="earth" />
+        </bean>
+        
+        <bean id="korra" class="com.mul.avatar.Korra">
+                <property name="element" ref="fire" />
+        </bean>
+</beans>
